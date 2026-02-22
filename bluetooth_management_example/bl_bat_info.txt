@@ -1,0 +1,1 @@
+	Battery Percentage: 0x30 (48)
