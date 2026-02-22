@@ -119,8 +119,7 @@ else:
 smplayer is the name of the video player i use in linux(fedora38)
 
 if keyboard input get recorded hk_2 send that input to hk_1
-  
-using 
+using hk_time.txt as a temp file
 
    
 
