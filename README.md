@@ -47,9 +47,9 @@ os.system("python3 display_tk_V3.py")
 #promax1st
 ```
 
-#EXAMPLE'S:
+EXAMPLE'S:
 
-#keyboard backlight:
+Keyboard Backlight:
 
 in this example 
 running_hk.py check's if hk1 and hk2 are running and if not running_hk.py uses os.popen() to run them
@@ -121,8 +121,58 @@ smplayer is the name of the video player i use in linux(fedora38)
 if keyboard input get recorded hk_2 send that input to hk_1
 using hk_time.txt as a temp file
 
+
+
+
+
+
+
+Bluetooth example
    
+bl_bat uses bluetoothctl to get the battery percentage of any connected divce
+
+```python3
+bl_tl = os.popen("bluetoothctl info | grep -i 'Percentage\|Missing device address argument' > /home/promax1st/python/bl_bat_info.txt")
+
+```
+bl_bat_info acts as a temp file and it is used to store the info about the divice
+
+
+bl_1 checks if the bluetooth connectivity of the divice the connects it if its not been already connected and disconnects it if it was connected
+
+```python3
+#checking the status of the connection
+bl_tl = os.popen("bluetoothctl info | grep 9C:19:C2:1B:5E:94").read()
+
+#running one of this command depending on the connection status
+command_1 = "bluetoothctl connect 9C:19:C2:1B:5E:94"
+command_2 = "bluetoothctl disconnect 9C:19:C2:1B:5E:94"
+```
 
 
 
 
+File BackUp Example
+
+this code makes a copy of the i3(linux window manager) config file 
+and uses the date(pc loacal date liek[Sun Feb 22 10:16:29 PM +0330 2026]) as a name 
+for the copied file
+
+```python3
+import os
+
+mypass = "0"
+command_2 = "date > /home/promax1st/python/i3/time.txt"
+my_time = open("/home/promax1st/python/i3/time.txt","r").read()
+
+print(command_2)
+
+command_1 = "cp -r /home/promax1st/.config/i3/config /home/promax1st/python/i3/" + "i3_config\|" +str(my_time).replace(" ","\|")
+
+print(command_1)
+
+os.popen("sudo -S %s"%(command_2),"w").write(mypass)
+os.popen("sudo -S %s"%(command_1),"w").write(mypass)
+
+exit()
+```
