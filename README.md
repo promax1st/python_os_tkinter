@@ -1,6 +1,6 @@
 using python os library to simulate running multiple algorithms simultaneously
 
----download doc.pdf for more info---
+---download doc.pdf for more info about python os---
 
 ```python3
 import os
