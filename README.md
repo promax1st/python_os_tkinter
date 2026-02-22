@@ -1,6 +1,6 @@
 using python os library to simulate running multiple algorithms simultaneously
 
----download doc.pdf for more info about threading all2---
+#download doc.pdf for more info about threading all2
 
 ```python3
 import os
@@ -47,9 +47,9 @@ os.system("python3 display_tk_V3.py")
 #promax1st
 ```
 
-EXAMPLE'S:
+#EXAMPLE'S:
 
-keyboard backlight:
+#keyboard backlight:
 
 in this example 
 running_hk.py check's if hk1 and hk2 are running and if not running_hk.py uses os.popen() to run them
