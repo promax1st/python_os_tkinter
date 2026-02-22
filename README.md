@@ -1,5 +1,7 @@
 using python os library to simulate running multiple algorithms simultaneously
 
+---download example.pdf for more info---
+
 ```python3
 import os
 import time
