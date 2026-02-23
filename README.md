@@ -2,6 +2,10 @@ using python os library to simulate running multiple algorithms simultaneously
 
 download doc.pdf for more info about threading all2
 
+
+![photo_2026-02-23_14-45-04](https://github.com/user-attachments/assets/adcbf89f-037c-4380-9ab0-0f785794244f)
+
+
 video of threading_all2 in action: https://vosta.netlify.app
 
 ```python3
